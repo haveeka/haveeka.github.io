@@ -18,3 +18,7 @@ section {
   }
 }
 
+.product-content {
+  min-width: 525px;
+}
+
