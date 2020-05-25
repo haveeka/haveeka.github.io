@@ -12,22 +12,30 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body style="padding: 10px;padding-top: 90px;">
     <nav class="navbar navbar-dark navbar-expand-md fixed-top text-white bg-dark flex-grow-1 navigation-clean" style="font-size: 14px;line-height: 20px;">
-        <div class="container"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/logo.png" /></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/logo.png" /></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
-                class="collapse navbar-collapse" id="navcol-1">
+                class="collapse navbar-collapse" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Products&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item disabled" role="presentation" href="#">Flour / Bhajani</a><a class="dropdown-item disabled" role="presentation" href="#">Instant Mix</a><a class="dropdown-item disabled" role="presentation" href="#">Retailed products</a></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.html#Flour-mix">Flour / Bhajani</a><a class="dropdown-item" role="presentation" href="index.html#Instant-mix">Instant Mix</a><a class="dropdown-item disabled" role="presentation"
+                                href="#">Retailed products</a></div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
@@ -35,68 +43,473 @@
         </div>
     </nav>
     <div class="article-list">
-        <div class="container" style="background-color: #eeeeee;min-width: 600px;">
+        <div class="container" id="Flour-mix" style="background-color: #eeeeee;min-width: 600px;">
             <div class="intro" style="max-width: 600px;">
                 <h2 class="text-center" style="margin-bottom: 10px;">Ready-Mix Flours</h2>
                 <p class="text-center" style="color: rgb(13,0,48);font-size: 18px;width: 600px;">Haveeka's ready to make flour range minimizes your preparation time</p>
             </div>
+            <div class="text-center" id="specials-flour" style="background-color: #ffb800;border-radius: 5px;">
+                <p style="color: rgb(0,0,0);padding: 3px;margin: 5px;">Best price offered on a minimum order of 5kg* or more !</p>
+            </div>
             <div class="row articles">
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/chakli.png"></a>
-                    <h3 class="name">Chakli Bhajani</h3>
-                    <h4 class="name" style="margin: 0px;">500gm/Pkt.</h4>
-                    <p class="description">Something about chakli bhajani</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/thalipeeth.png"></a>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#chakli-brief"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/icon_chakli.png"></a>
+                    <h3 class="name">Chakali Bhajani</h3>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹100, 500gm/Pkt.</h4>
+                    <p class="description" style="font-size: 16px;">A delicious, crunchy, spiky-textured spiral snack that is a festive specialty</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="chakli-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Chakli (murukku)</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;~30 Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" src="assets/img/Chakli_ready.jpg" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="Chakli"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Chakli Bhajani<br></td>
+                                                                            <td>500 gm</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Frying Oil</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sesame seeds</td>
+                                                                            <td>1/4 cup</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>To be updated ...</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Crunchy Chakli is ready</strong>&nbsp;!</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#chakli-brief"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#thalipith-brief"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/icon_thalipeeth.png"></a>
                     <h3 class="name">Thalipith Bhajani</h3>
-                    <h4 class="name" style="margin: 0px;">250gm/Pkt.</h4>
-                    <p class="description">Something about thalipith bhajani</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/komdi_vada.png"></a>
-                    <h3 class="name">Kombadi Vade</h3>
-                    <h4 class="name" style="margin: 0px;">250gm/Pkt.</h4>
-                    <p class="description">Something about thalipith bhajani</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/upwas.png"></a>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹55, 250gm/Pkt.</h4>
+                    <p class="text-center description" style="font-size: 16px;">Maharashtrian roasted multi-grain bread. Tastes best when consumed with curd or makkhan.</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="thalipith-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Thalipith (Crispy onion bread)</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;4-5 Medium Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" src="assets/img/Thalipith.PNG" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="Thalipith"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Thalipith Bhajani<br></td>
+                                                                            <td>250 gm</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Medium Onions, diced</td>
+                                                                            <td>2</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Boiled Mashed Potato (optional)</td>
+                                                                            <td>1</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Coriander, fine chop</td>
+                                                                            <td>1/2 cup</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Fenugreek leaves, (optional)</td>
+                                                                            <td>1/4 cup</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Paste of ginger, garlic &amp; green chilli</td>
+                                                                            <td>2 Tbsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Turmeric</td>
+                                                                            <td>1 Tsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Red Chilli powder</td>
+                                                                            <td>1 Tbsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Water, Oil and Butter / Makkhan</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>In a kneading bowl, add the above ingredients to bhajani &amp; mix properly.</li>
+                                            <li>Slowly add water to knead a dough, it should be soft enough to press with fingers.</li>
+                                            <li>Take one ball of dough as per size you require, apply little water on plastic sheet &amp; press the dough evenly with fingers to give it a flat disk shape.</li>
+                                            <li>Put some oil in a fry/non-stick pan and shallow fry Thalipith from both the sides.</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Crispy Thalipith is ready, top it up with makhhan and dig in !</strong></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#thalipith-brief"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#komvade-brief"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/icon_komdi_vada.png"></a>
+                    <h3 class="name">Kombdi Vade</h3>
+                    <h4 class="name" style="margin: 0px;">MRP:&nbsp;₹35, 250gm/Pkt.</h4>
+                    <p class="description" style="font-size: 16px;">Native Konkani style bread that tastes delicious with chicken curry</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="komvade-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Kombdivade</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;15-20 Small Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="komdivada"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Kombdivade Bhajani<br></td>
+                                                                            <td>250 gm</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>To be updated ...</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Kombdivade are ready, serve them with your favourite chicken curry</strong>&nbsp;<strong>!</strong></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#komvade-brief"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#upbhajani-brief"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/icon_upwas.png"></a>
                     <h3 class="name">Upwas Bhajani</h3>
-                    <h4 class="name" style="margin: 0px;">250gm/Pkt.</h4>
-                    <p class="description">Something about upwas bhajani</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid shadow-sm" data-bs-hover-animate="pulse" src="assets/img/bhajani_vada.jpeg" style="height: 280px;width: 220px;"></a>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹55, 250gm/Pkt.</h4>
+                    <p class="description" style="font-size: 16px;">Gluten-free bread that is made to keep your will strong during the fasting</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="upbhajani-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Upwas Bhajani</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;5-6 Small Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="upwas thalipith"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Upwas Bhajani<br></td>
+                                                                            <td>250 gm</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>To be updated ...</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Upwas Thalipith are ready, serve them with curd</strong>&nbsp;<strong>!</strong></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#upbhajani-brief" style="margin-top: 15%;"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#bhajvade-brief"><img class="img-fluid shadow-sm" data-bs-hover-animate="pulse" src="assets/img/bhajani_vada.jpeg" style="width: 220px;height: 280px;"></a>
                     <h3 class="name" style="padding-top: 0px;">Bhajani Vade</h3>
-                    <h4 class="name" style="margin: 0px;">250gm/Pkt.</h4>
-                    <p class="description">Something about bhajani vade</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/amboli.png" style="height: 280px;width: 270px;"></a>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹40, 250gm/Pkt.</h4>
+                    <p class="description" style="font-size: 16px;">Multi-grain bread that puffs up with fragrance of the roasted grains. Delicious in its own, but loves to go with pickles</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="bhajvade-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Bhajani Vade</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;15-20 Small Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="Bhajani Vade"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Bhajani Vade<br></td>
+                                                                            <td>250 gm</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>To be updated ...</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Bhajani vade are ready, serve them with your favourite chutney</strong>&nbsp;<strong>!</strong></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#bhajvade-brief"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#" data-toggle="modal" data-target="#amboli-brief"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/icon_amboli.png" style="height: 280px;width: 270px;"></a>
                     <h3 class="name">Amboli Flour</h3>
-                    <h4 class="name" style="margin: 0px;">250gm/Pkt.</h4>
-                    <p class="description">Something about amboli flour</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹40, 250gm/Pkt.</h4>
+                    <p class="description" style="font-size: 16px;">Amboli is versatile, easy and quick pancake with a crisp Maharashtrian touch to its flavour</p>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="amboli-brief">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Amboli</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="text-left serves-time"><span style="margin-right: 15px;margin-left: 20px;"><i class="la la-cutlery"></i>&nbsp;15-20 Medium Pieces</span><span style="margin-right: 15px;"><i class="far fa-clock"></i>&nbsp;30-40mins</span></div>
+                                <div class="modal-body">
+                                    <div class="product-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50%;"><img class="rounded img-fluid" src="assets/img/Amboli-1.png" style="width: 100%;filter: contrast(129%);margin-top: 10px;" alt="Thalipith"></td>
+                                                        <td class="text-left" style="padding: 0px;"><br>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Ingredients (Plain Amboli)</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Haveeka Amboli Flour<br></td>
+                                                                            <td>250 gm</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Warm Water</td>
+                                                                            <td>1.5-2 Cups</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Salt (per taste)</td>
+                                                                            <td>1-2 Tsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Curd / Buttermilk</td>
+                                                                            <td>3 Tbsp</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="table-responsive text-left">
+                                                                <table class="table table-sm">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Add On (Masala Amboli)</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Turmeric powder<br></td>
+                                                                            <td>1 Tsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Red Chilli Powder</td>
+                                                                            <td>1 Tbsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Ginger Garlic Paste</td>
+                                                                            <td>1 Tbsp</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Chopped vegetables of choice</td>
+                                                                            <td>1-2</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Let's Begin</h4>
+                                        <ol class="text-left">
+                                            <li>In a kneading bowl, add the above ingredients to flour &amp; mix properly (except vegetables).</li>
+                                            <li>Slowly add warm water as you stir continuously to make a thick enough, pouring consistency batter.&nbsp;</li>
+                                            <li>Remove any lumps by stiring, then add finely chopped vegetables (optional).</li>
+                                            <li>Keep the batter aside for 20 min.</li>
+                                            <li>Pour the batter on a non-stick pan and spread evenly. For normal pan, add little oil or butter to grease the pan before pouring the batter.&nbsp;</li>
+                                        </ol>
+                                        <p class="text-center" style="color: rgb(215,135,0);"><strong>That's it ! Soft and spongy Amboli is ready, serve with your favourite chutney</strong></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div><a class="action" href="#" data-toggle="modal" data-target="#amboli-brief"><i class="fa fa-arrow-circle-right"></i></a></div>
+            </div>
+            <div id="conditions" data-spy="modal" data-target="#brochure">
+                <p style="font-size: 12px;margin: 5px;padding: 8px;">*To avail the discounted rate, 5kg or more of the <strong>same product</strong> must be ordered.</p>
             </div>
         </div>
-        <div class="container" style="min-width: 600px;">
-            <div class="intro">
-                <h2 class="text-center" style="margin-bottom: 10px;padding-top: 10px;">Instant Gravy Mix</h2>
-                <p class="text-center">Haveeka's delicious instant gravy mix adds homestyle flavours</p>
+        <div class="modal fade" role="dialog" tabindex="-1" id="brochure">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Download our latest brochure</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <p class="text-center">.<a href="https://drive.google.com/file/d/1-4wZdQNsU-CaE2g1DDfIN5kx97Hz7-MB/view?usp=sharing" target="_blank"><img class="img-fluid" src="assets/img/Brochure.PNG" alt="Brochure" style="width: 80%;"></a></p>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                </div>
             </div>
+        </div>
+        <div class="container" id="Instant-mix" style="min-width: 600px;">
+            <div class="intro">
+                <h2 class="text-center" style="margin-bottom: 10px;padding-top: 10px;color: rgb(205,86,0);">Instant Gravy Mix</h2>
+            </div>
+            <p class="text-center" style="color: rgb(176,95,0);">Add restaurant style taste to any vegetable that you make with our gravy ! Cooking for everyone made easy.<br><br><strong>NO ARTIFICIAL PRESERVATIVES / COLORS !</strong></p>
             <div class="row articles">
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/Red_gravy.jpg"></a>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid border rounded-0 border-dark" data-bs-hover-animate="pulse" src="assets/img/icon_Red_gravy.jpg"></a>
                     <h3 class="name">Red Gravy Mix</h3>
-                    <h4 class="name" style="margin: 0px;">50gm/Pkt.</h4>
-                    <p class="description">Something about gravy mix<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/white_gravy.jpg"></a>
+                    <h4 class="name" style="margin: 0px;">MRP:&nbsp;₹60, 50gm/Pkt.<br></h4><a class="action" href="#"></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid border rounded-0 border-dark" data-bs-hover-animate="pulse" src="assets/img/icon_white_gravy.jpg"></a>
                     <h3 class="name">White Gravy Mix</h3>
-                    <h4 class="name" style="margin: 0px;">50gm/Pkt.</h4>
-                    <p class="description">Something about gravy mix<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/Golden_gravy.jpg"></a>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹60, 50gm/Pkt.</h4><a class="action" href="#"></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid border rounded-0 border-dark" data-bs-hover-animate="pulse" src="assets/img/icon_Golden_gravy.jpg"></a>
                     <h3 class="name">Golden Gravy Mix</h3>
-                    <h4 class="name" style="margin: 0px;">50gm/Pkt.</h4>
-                    <p class="description">Something about gravy mix<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/Green_gravy.jpg"></a>
+                    <h4 class="name" style="margin: 0px;">MRP:&nbsp;₹60, 50gm/Pkt.<br></h4><a class="action" href="#"></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid border rounded-0 border-dark" data-bs-hover-animate="pulse" src="assets/img/icon_Green_gravy.jpg"></a>
                     <h3 class="name">Green Gravy Mix</h3>
-                    <h4 class="name" style="margin: 0px;">50gm/Pkt.</h4>
-                    <p class="description">Something about gravy mix<br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid" data-bs-hover-animate="pulse" src="assets/img/one_for_all.jpg"></a>
-                    <h3 class="name">One For All</h3>
-                    <h4 class="name" style="margin: 0px;">50gm/Pkt.</h4>
-                    <p class="description">Something about gravy mix</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    <h4 class="name" style="margin: 0px;">MRP: ₹60, 50gm/Pkt.<br></h4><a class="action" href="#"></a></div>
+                <div class="col-6 col-sm-6 col-md-4 col-xl-3 item" style="padding-top: 20px;"><a href="#"><img class="img-fluid border rounded-0 border-dark" data-bs-hover-animate="pulse" src="assets/img/icon_one_for_all.jpg"></a>
+                    <h3 class="name">Pulses and Legume gravy</h3>
+                    <h4 class="name" style="margin: 0px;">₹60, 50gm/Pkt.<br></h4><a class="action" href="#"></a></div>
             </div>
         </div>
     </div>
-    <div class="footer-dark" style="min-width: 600px;">
+    <div class="text-center footer-dark" style="min-width: 600px;">
         <footer>
             <div class="container">
                 <div class="row">
@@ -128,9 +541,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/brochure.js"></script>
 </body>
 
 </html>
