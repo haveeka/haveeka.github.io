@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Haveeka | Contact US</title>
+    <title>Haveeka | Contact Us</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One">
@@ -18,24 +18,31 @@
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body style="padding: 10px;padding-top: 90px;">
-    <div class="contact-clean">
-        <form class="border rounded" data-bss-recipient="1dc28c2f25cc50d84c063641f84d8cf0" data-bss-subject="Haveeka">
-            <h2 class="text-center">Contact us</h2>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required=""></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required=""></div>
-            <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" required=""></textarea></div>
-            <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
-            <p class="text-center"><strong>OR</strong></p>
-            <p class="text-center"><i class="fas fa-phone" style="font-size: 20px;"></i>&nbsp;+91&nbsp;9820210424 / 9819287007<br></p>
-        </form>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center"><img class="rounded img-fluid" src="assets/img/brochure.jpg" style="margin-bottom: 10px;margin-top: 10px;"></div>
+                <div class="col-md-6">
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <form id="gform" class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdTChlVGh5K3mn8bvKlUL9FSyjfXfB3XGz2iYlha-YRgK82qw/formResponse?" target="hidden_form" onsubmit="submitted=true;" method="post">
+                                <h3 class="text-center">Contact Us</h3>
+                                <p>Please use this form for questions and feedback. Do not enter sensitive information such as any payment related details. For payment or order related issues email directly to <a href="mailto:support@haveeka.com">support@haveeka.com</a>.
+                                    To report any technical issues or bugs, kindly email <a href="mailto:report@haveeka.com">report@haveeka.com</a>.<br></p><input class="form-control" type="text" placeholder="Name" required="" pattern="^[a-zA-Z ]{1,50}"
+                                    maxlength="50" title="Alphabets only" name="entry.1018018878"><input class="form-control" type="email" required="" placeholder="Email" name="entry.906739270" inputmode="email"><input class="form-control" type="text" pattern="(^[0-9+]{8,50})"
+                                    placeholder="Contact (optional)" title="Enter valid phone number" name="entry.402575012"><textarea class="form-control" placeholder="Message" spellcheck="true" required="" name="entry.1428365180"></textarea>
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" name="entry.636799760" value="Yes" checked=""><label class="form-check-label" for="formCheck-1">Receive updates and offers</label></div><button class="btn btn-primary"
+                                    type="submit">Submit</button></form><iframe name="hidden_form" id="hidden_form" style="display:none;" onload="if(submitted){}"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer-dark">
         <footer>
@@ -84,9 +91,10 @@
     </nav>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/brochure.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/frame-buster.js"></script>
 </body>
 
 </html>

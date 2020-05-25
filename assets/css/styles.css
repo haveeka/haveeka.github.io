@@ -22,3 +22,7 @@ section {
   min-width: 525px;
 }
 
+.contact-form > * {
+  margin-top: 8px;
+}
+
